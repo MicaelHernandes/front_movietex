@@ -848,7 +848,7 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .md\:flex {
     display: flex;
   }
