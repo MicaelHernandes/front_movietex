@@ -184,16 +184,23 @@
 
             <div class="w-full rounded-lg mt-2 h-[400px]  flex flex-col gap-5">
                 <h2 class="text-4xl font-serif">Avaliar Filme</h2>
-                <form action="" class="w-full bg-gray-100 rounded-lg">
-                    <div class="flex flex-col gap-5 p-5">
+                <form action="" class="w-full bg-gray-100 rounded-lg relative">
+                    <div
+                        class="absolute top-0 left-0 w-full h-full bg-gray-100 bg-opacity-95 flex flex-col justify-center items-center">
+                        <img src="img/figuras/ticket.png" alt="Imagem de necessario login" class="h-[80%]">
+                        <h2 class="text-2xl text-black font-serif uppercase">Necessario login para poder avaliar!</h2>
+                        <a href=""
+                            class="p-5 bg-primary m-2 rounded-lg text-white w-[20%] text-center hover:-translate-y-1 hover:scale-105 transition-all duration-150">Logar-se</a>
+                    </div>
+                    <div class="flex flex-col gap-5 p-5 ">
                         <div class="flex flex-col gap-2">
                             <label for="nota">Nota</label>
                             <input type="number" name="nota" id="nota" min="0" max="10" class="p-2 rounded-lg" required>
                         </div>
                         <div class="flex flex-col gap-2">
                             <label for="comentario">Comentário</label>
-                            <textarea name="comentario" id="comentario" cols="30" rows="10"
-                                class="p-2 rounded-lg" required></textarea>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" class="p-2 rounded-lg"
+                                required></textarea>
                         </div>
                         <div class="flex flex-col gap-2">
                             <button type="submit" class="bg-primary text-white p-2 rounded-lg">Enviar</button>
